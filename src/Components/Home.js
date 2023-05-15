@@ -32,17 +32,17 @@ const Home = () => {
         <div style={coorieLogo}></div>
       </div>
 
-      <div class="relative bg-gray-200 px-80 py-20">
-        <h1 class="text-6xl font-light italic text-center p-10 px-10">
+      <div class="relative bg-gray-200 px-80">
+        <h1 class="text-3xl font-light italic text-center p-10 px-10">
           COORIE / ku:ri / `&gt;`{" "}
         </h1>
 
-        <h2 class="text-5xl font-bold tracking-tight text-center p-10 px-10">
+        <h2 class="text-2xl font-bold tracking-tight text-center px-10">
           The Scottish art of deriving comfort, wellbeing and energy from wild
           landscapes.
         </h2>
 
-        <h3 class="text-5xl font-light tracking-tight text-center p-20">
+        <h3 class="text-2xl font-light tracking-tight text-center p-10">
           The aim of The Coorie Project is to create an online platform to
           highlight the beauty of the natural world, and help protect it by
           raising awareness and funds for climate change science and curated
@@ -81,11 +81,12 @@ const Home = () => {
             style={{
               backgroundImage:
                 "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Giants+Graves+3+INSTA.jpg')",
-              position: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              width: "500px",
-              height: "350px",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              boxShadow: "0px 5px 20px rgba(0, 0, 0, 0.5)",
             }}
           ></div>
           <div
@@ -93,11 +94,12 @@ const Home = () => {
             style={{
               backgroundImage:
                 "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lower+q.jpeg')",
-              position: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              width: "500px",
-              height: "350px",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              boxShadow: "0px 5px 20px rgba(0, 0, 0, 0.5)",
             }}
           ></div>
           <div
@@ -105,11 +107,12 @@ const Home = () => {
             style={{
               backgroundImage:
                 "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Zero-Image-135-Back-to-Nature-Pinhole-Camera-Front+(1).jpg')",
-              position: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              width: "500px",
-              height: "350px",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              boxShadow: "0px 5px 20px rgba(0, 0, 0, 0.5)",
             }}
           ></div>
           <div className="col-start-1 row-start-2 text-center text-lg">
@@ -166,7 +169,7 @@ const Home = () => {
                   <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                   <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                   <span class="relative text-black group-hover:text-white">
-                    Patreon
+                    Sponsorship / Patreon
                   </span>
                 </a>
               </Link>
@@ -174,6 +177,113 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        <div className="grid grid-cols-3 grid-rows-3 justify-center items-center text-center bg-gray-200">
+          <div className="col-start-2">
+            <h3 class="text-2xl font-lightjustify-center items-center text-center py-10">
+              Our Screenprints begin with a single black and white pinhole
+              photograph that accompany each video. We then develop these
+              photographs at Street Level Photoworks in Glasgow. These images
+              are then professionally screenprinted using traditional techniques
+              at The Glasgow Print Studio.
+            </h3>
+          </div>
+          <div
+            className="row-start-2 bg-gray-200"
+            style={{
+              backgroundImage:
+                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+1.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              marginTop: "100px",
+            }}
+          ></div>
+          <div
+            className="row-start-2 bg-gray-200 "
+            style={{
+              backgroundImage:
+                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+6.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              marginTop: "100px",
+            }}
+          ></div>
+          <div
+            className="row-start-2 bg-gray-200 "
+            style={{
+              backgroundImage:
+                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+3.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              marginTop: "100px",
+            }}
+          ></div>
+          <div
+            className="row-start-3 bg-gray-200 "
+            style={{
+              backgroundImage:
+                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+4.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              marginTop: "200px",
+            }}
+          ></div>
+          <div
+            className="row-start-3 bg-gray-200 "
+            style={{
+              backgroundImage:
+                "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+2.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              marginTop: "200px",
+            }}
+          ></div>
+          <div
+            className="row-start-3 bg-gray-200 "
+            style={{
+              backgroundImage:
+                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+1.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+              marginTop: "200px",
+            }}
+          ></div>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center py-40 bg-gray-200">
+        <Link className="text-5xl font-light italic" to="/screenprints">
+          <a
+            href="#_"
+            class="relative inline-block px-4 py-2 font-medium group"
+          >
+            <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+            <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+            <span class="relative text-black group-hover:text-white">
+              Visit Store
+            </span>
+          </a>
+        </Link>
+      </div>
+
     </body>
   );
 };
