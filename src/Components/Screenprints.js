@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import NavBar from "./NavBar";
-// import { Link } from "react-router-dom";
-import Showreel from "./Showreel";
-
+import Gallery from "./Gallery";
 
 const Screenprints = () => {
   useEffect(() => {
@@ -28,36 +26,34 @@ const Screenprints = () => {
       "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/the+Cobbler+copy.jpg')",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "1400px",
+    height: "1600px",
+  };
 
-    
+  const containerStyle = {
+    overflow: "hidden", // Prevents content from overflowing outside the container
   };
 
   return (
+    <div class="bg-gray-200">
     <section>
-    <div>
-      <div className="relative h-screen bg-cover" style={printImage}>
+      <div className="relative h-screen bg-cover" style={{ ...printImage, ...containerStyle }}>
         <NavBar className="absolute top-0 left-0 right-0" />
         <h3 className="text-6xl font-semibold text-white text-center pl-96 pr-96 py-80 parallax">
           Screenprints. Professionally made by hand in Glasgow, Scotland.
         </h3>
         <h3 className="text-3xl text-white text-center pl-96 pr-96 py-32 parallax">
-        Our Screenprints begin with a single black and white pinhole
-              photograph that accompanies each video. We then develop these
-              photographs at Street Level Photoworks in Glasgow. These images
-              are then professionally screenprinted using traditional techniques
-              at The Glasgow Print Studio.
+          Our Screenprints begin with a single black and white pinhole photograph that accompanies each video.
+          We then develop these photographs at Street Level Photoworks in Glasgow.
+          These images are then professionally screenprinted using traditional techniques at The Glasgow Print Studio.
         </h3>
       </div>
+
+      <div>
+        <Gallery />
+      </div>
+      
+    </section>
     </div>
-
-    <div>
-      <Showreel />
-    </div>
-
-      </section>
-
-    
   );
 };
 

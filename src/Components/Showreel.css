@@ -1,4 +1,4 @@
-.showreel-container {
+/* .showreel-container {
   height: 100vh;
   overflow-y: scroll;
 }
@@ -24,4 +24,5 @@
 .animate {
   opacity: 1;
   transform: translateX(0);
-}
+  transition-delay: 0.2s;
+} */

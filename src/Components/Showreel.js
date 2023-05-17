@@ -1,60 +1,65 @@
-import React, { useEffect, useRef, useMemo } from 'react';
-import './Showreel.css';
+// import React, { useEffect, useRef } from 'react';
+// import './Showreel.css';
 
-const Showreel = () => {
-  const images = useMemo(
-    () => ['print1.png', 'print2.png', 'print3.png'],
-    []
-  );
+// const Showreel = () => {
+//   const showreelRef = useRef(null);
 
-  const showreelRef = useRef(null);
+//   useEffect(() => {
+//     const showreel = showreelRef.current;
+//     const images = showreel.querySelectorAll('.showreel-image');
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const showreel = showreelRef.current;
-      const showreelTop = showreel.getBoundingClientRect().top;
-      const showreelBottom = showreel.getBoundingClientRect().bottom;
+//     const options = {
+//       root: null,
+//       rootMargin: '0px',
+//       threshold: 0.5,
+//     };
 
-      images.forEach((image, index) => {
-        const imageElement = document.getElementById(`image-${index}`);
-        const imageTop = imageElement.getBoundingClientRect().top;
-        const imageBottom = imageElement.getBoundingClientRect().bottom;
+//     const handleIntersect = (entries, observer) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add('animate');
+//         }
+//       });
+//     };
 
-        if (
-          (imageTop >= showreelTop && imageTop <= showreelBottom) ||
-          (imageBottom >= showreelTop && imageBottom <= showreelBottom) ||
-          (imageTop <= showreelTop && imageBottom >= showreelBottom)
-        ) {
-          imageElement.classList.add('animate');
-        } else {
-          imageElement.classList.remove('animate');
-        }
-      });
-    };
+//     const observer = new IntersectionObserver(handleIntersect, options);
 
-    handleScroll(); // Trigger scroll handler once on component mount
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [images]);
+//     images.forEach((image) => {
+//       observer.observe(image);
+//     });
 
-  return (
-    <div className="showreel-container">
-      <div className="showreel" ref={showreelRef}>
-        {images.map((image, index) => (
-          <div key={index} className="showreel-row">
-            <img
-              src={`/images/${image}`}
-              alt={`Print ${index + 1}`}
-              className="showreel-image"
-              id={`image-${index}`}
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+//     return () => {
+//       observer.disconnect();
+//     };
+//   }, []);
 
-export default Showreel;
+//   return (
+//     <div className="showreel-container">
+//       <div className="showreel" ref={showreelRef}>
+//         <div className="showreel-row">
+//           <img
+//             src="/images/print1.png"
+//             alt="Print 1"
+//             className="showreel-image"
+//           />
+//         </div>
+//         <div className="showreel-row">
+//           <img
+//             src="/images/print2.png"
+//             alt="Print 2"
+//             className="showreel-image"
+//           />
+//         </div>
+//         <div className="showreel-row">
+//           <img
+//             src="/images/print3.png"
+//             alt="Print 3"
+//             className="showreel-image"
+//           />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Showreel;

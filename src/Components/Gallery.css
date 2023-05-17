@@ -1,0 +1,19 @@
+section{
+    display: grid;
+    align-content: center;
+    place-items: center;
+    min-height: 110vh;
+}
+
+
+.gallery-image {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .gallery-image.show {
+    opacity: 1;
+  }
+
+
+  
