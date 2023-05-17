@@ -3,6 +3,8 @@ import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+
+  
   const backgroundImage = {
     backgroundImage:
       "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg')",
@@ -179,11 +181,11 @@ const Home = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-3 grid-rows-3 justify-center items-center text-center bg-gray-200">
-          <div className="col-start-2">
-            <h3 class="text-2xl font-lightjustify-center items-center text-center py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 grid-rows-6 justify-center items-center text-center bg-gray-200">
+          <div className="sm:col-start-1">
+            <h3 className="text-2xl font-light justify-center items-center text-center py-10">
               Our Screenprints begin with a single black and white pinhole
-              photograph that accompany each video. We then develop these
+              photograph that accompanies each video. We then develop these
               photographs at Street Level Photoworks in Glasgow. These images
               are then professionally screenprinted using traditional techniques
               at The Glasgow Print Studio.
@@ -283,7 +285,6 @@ const Home = () => {
           </a>
         </Link>
       </div>
-
     </body>
   );
 };
