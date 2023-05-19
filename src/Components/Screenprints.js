@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import NavBar from "./NavBar";
 import Gallery from "./Gallery";
+import SoundCloudPlayer from "./SoundCloudPlayer";
 
 const Screenprints = () => {
   useEffect(() => {
@@ -50,6 +51,10 @@ const Screenprints = () => {
 
       <div>
         <Gallery />
+      </div>
+
+      <div>
+        <SoundCloudPlayer />
       </div>
       
     </section>
