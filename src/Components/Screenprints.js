@@ -35,7 +35,7 @@ const Screenprints = () => {
   };
 
   return (
-    <div class="bg-gray-200">
+    <div>
     <section>
       <div className="relative h-screen bg-cover" style={{ ...printImage, ...containerStyle }}>
         <NavBar className="absolute top-0 left-0 right-0" />
@@ -49,15 +49,30 @@ const Screenprints = () => {
         </h3>
       </div>
 
-      <div>
+      <div class="flex flex-col justify-center items-center">
         <Gallery />
       </div>
 
       <div>
         <SoundCloudPlayer />
       </div>
-      
     </section>
+
+    <div className="flex flex-col justify-center items-center py-40">
+      <a
+        href="https://dreichdesign.bigcartel.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-5xl font-light italic relative inline-block px-4 py-2 font-medium group"
+      >
+        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+        <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+        <span className="relative text-black group-hover:text-white">
+          Visit Store
+        </span>
+      </a>
+    </div>
+
     </div>
   );
 };

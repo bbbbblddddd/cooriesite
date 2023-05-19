@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Gallery.css";
+import './Gallery.css';
 
 const Gallery = () => {
   const [imageVisible, setImageVisible] = useState({});
@@ -37,7 +37,7 @@ const Gallery = () => {
 
   return (
   
-    <div class="bg-gray-200">
+    <div class= "align-items-center text-center justify-center items-center">
       <section
         className="gallery-section"
         data-image="print1"

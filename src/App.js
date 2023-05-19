@@ -1,14 +1,11 @@
-
 import CoorieContainer from './Container/CoorieContainer';
+import './App.css';
 
 function App() {
-
   return (
-
-    <body>
+    <div className="App">
       <CoorieContainer />
-    </body>
-
+    </div>
   );
 }
 
