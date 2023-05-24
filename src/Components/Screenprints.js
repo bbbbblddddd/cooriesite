@@ -31,7 +31,7 @@ const Screenprints = () => {
   };
 
   const containerStyle = {
-    overflow: "hidden", // Prevents content from overflowing outside the container
+    overflow: "hidden",
   };
 
   return (
@@ -39,15 +39,25 @@ const Screenprints = () => {
     <section>
       <div className="relative h-screen bg-cover" style={{ ...printImage, ...containerStyle }}>
         <NavBar className="absolute top-0 left-0 right-0" />
-        <h3 className="text-6xl font-semibold text-white text-center pl-96 pr-96 py-80 parallax">
+        <h3 className="text-6xl font-semibold text-white text-center pl-96 pr-96 py-80 parallax"
+        style={{ textShadow: "0 0 1px black" }}>
           Screenprints. Professionally made by hand in Glasgow, Scotland.
         </h3>
-        <h3 className="text-3xl text-white text-center pl-96 pr-96 py-32 parallax">
+        <h2 className="text-3xl text-white text-center pl-96 pr-96 py-32 parallax" style={{ textShadow: "0 0 1px black" }}>
           Our Screenprints begin with a single black and white pinhole photograph that accompanies each video.
           We then develop these photographs at Street Level Photoworks in Glasgow.
           These images are then professionally screenprinted using traditional techniques at The Glasgow Print Studio.
-        </h3>
+        </h2>
       </div>
+
+
+      <section class = "pl-96 pr-96">
+        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+1.png" alt="Artboard 1" />
+        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+2.png" alt="Artboard 2" />
+        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+3.png" alt="Artboard 3" />
+        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+4.png" alt="Artboard 4" />
+        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+5.png" alt="Artboard 5" />
+      </section>
 
       <div class="flex flex-col justify-center items-center">
         <Gallery />
@@ -58,7 +68,7 @@ const Screenprints = () => {
       </div>
     </section>
 
-    <div className="flex flex-col justify-center items-center py-40">
+    <div className="flex flex-col justify-center items-center py-20">
       <a
         href="https://dreichdesign.bigcartel.com/"
         target="_blank"

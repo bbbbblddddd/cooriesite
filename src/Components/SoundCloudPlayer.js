@@ -11,7 +11,7 @@ const SoundCloudPlayer = () => {
         backgroundPosition: "center",
         width: "100%",
         height: "0",
-        paddingTop: "70%",
+        paddingTop: "60%",
         position: "relative",
         overflow: "hidden",
       }}
@@ -24,7 +24,6 @@ const SoundCloudPlayer = () => {
           transform: "translateX(-50%)",
           width: "55%",
           height: "10%",
-          backgroundColor: "rgba(0, 0, 0, 0.8)",
           color: "#ffffff",
           display: "flex",
           flexDirection: "column",
@@ -43,16 +42,6 @@ const SoundCloudPlayer = () => {
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1089803344&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         ></iframe>
         <div>
-          <a
-            href="https://soundcloud.com/clydebuiltradio"
-            title="Clyde Built Radio"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#ffffff", textDecoration: "none" }}
-          >
-            {" "}
-          </a>{" "}
-          ·{" "}
           <a
             href="https://soundcloud.com/clydebuiltradio/the-coorie-project"
             title="The Coorie Project (16/7/21)"

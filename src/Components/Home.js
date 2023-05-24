@@ -1,11 +1,8 @@
 import React from "react";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
-import SoundCloudPlayer from "./SoundCloudPlayer";
 
 const Home = () => {
-
-  
   const backgroundImage = {
     backgroundImage:
       "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg')",
@@ -35,12 +32,12 @@ const Home = () => {
         <div style={coorieLogo}></div>
       </div>
 
-      <div class="relative bg-gray-200 px-80">
+      <div class="relative px-80 ">
         <h1 class="text-3xl font-light italic text-center p-10 px-10">
           COORIE / ku:ri / `&gt;`{" "}
         </h1>
 
-        <h2 class="text-2xl font-bold tracking-tight text-center px-10">
+        <h2 class="text-2xl font-bold tracking-tight text-center px-10 ">
           The Scottish art of deriving comfort, wellbeing and energy from wild
           landscapes.
         </h2>
@@ -61,24 +58,12 @@ const Home = () => {
         </div> */}
       </div>
 
-      <div className="px-20 bg-gray-200">
-        <div className="flex flex-col justify-center items-center text-6xl font-light italic p-20 y-10 bg-gray-200">
+      <div className="px-20 ">
+        <div className="flex flex-col justify-center items-center text-6xl font-light italic p-20 y-10">
           What We Do
         </div>
 
-        {/* <div className="grid grid-cols-3 grid-rows-4 bg-gray-200 justify-items-center align-items-center py-5">
-          <div className="col-start-1 row-start-3 text-4xl font-light italic text-center">
-            Monetised Youtube
-          </div>
-          <div className="col-start-2 row-start-3 text-4xl font-light italic text-center">
-            ScreenPrints
-          </div>
-          <div className="col-start-3 row-start-3 text-4xl font-light italic text-center">
-            Sponsorship/ Patreon
-          </div>
-        </div> */}
-
-        <div className="grid grid-cols-3 grid-rows-2 bg-gray-200 justify-items-center align-items-center gap-8">
+        <div className="grid grid-cols-3 grid-rows-2 justify-items-center align-items-center gap-8 bg-black≈">
           <div
             className="col-start-1 row-start-1"
             style={{
@@ -148,6 +133,9 @@ const Home = () => {
                 <a
                   href="#_"
                   class="relative inline-block px-4 py-2 font-medium group"
+                  onClick={() =>
+                    window.scrollTo({ top: 0})
+                  }
                 >
                   <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                   <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
@@ -181,123 +169,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 grid-rows-6 justify-center items-center text-center bg-gray-200">
-          <div className="sm:col-start-1">
-            <h3 className="text-2xl font-light justify-center items-center text-center py-10">
-              Our Screenprints begin with a single black and white pinhole
-              photograph that accompanies each video. We then develop these
-              photographs at Street Level Photoworks in Glasgow. These images
-              are then professionally screenprinted using traditional techniques
-              at The Glasgow Print Studio.
-            </h3>
-          </div>
-          <div
-            className="row-start-2 bg-gray-200"
-            style={{
-              backgroundImage:
-                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+1.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "100%",
-              marginTop: "100px",
-            }}
-          ></div>
-          <div
-            className="row-start-2 bg-gray-200 "
-            style={{
-              backgroundImage:
-                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+6.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "100%",
-              marginTop: "100px",
-            }}
-          ></div>
-          <div
-            className="row-start-2 bg-gray-200 "
-            style={{
-              backgroundImage:
-                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+3.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "100%",
-              marginTop: "100px",
-            }}
-          ></div>
-          <div
-            className="row-start-3 bg-gray-200 "
-            style={{
-              backgroundImage:
-                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+4.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "100%",
-              marginTop: "200px",
-            }}
-          ></div>
-          <div
-            className="row-start-3 bg-gray-200 "
-            style={{
-              backgroundImage:
-                "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+2.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "100%",
-              marginTop: "200px",
-            }}
-          ></div>
-          <div
-            className="row-start-3 bg-gray-200 "
-            style={{
-              backgroundImage:
-                "url(' https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Layer+1.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "100%",
-              marginTop: "200px",
-            }}
-          ></div>
-        </div>
-      </div>
-      <div className="flex flex-col justify-center items-center py-40 bg-gray-200">
-        <Link className="text-5xl font-light italic" to="/screenprints">
-          <a
-            href="#_"
-            class="relative inline-block px-4 py-2 font-medium group"
-          >
-            <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-            <span class="relative text-black group-hover:text-white">
-              Visit Store
-            </span>
-          </a>
-        </Link>
-      </div>
 
-      <section>
-      <h3 className="text-3xl text-black text-center pl-96 pr-96 py-32 parallax">
-          Our Screenprints begin with a single black and white pinhole photograph that accompanies each video.
-          We then develop these photographs at Street Level Photoworks in Glasgow.
-          These images are then professionally screenprinted using traditional techniques at The Glasgow Print Studio.
-        </h3>
-
-        <SoundCloudPlayer />
-      </section>
-
-      
 
       
     </body>
