@@ -1,27 +1,105 @@
-import React from "react";
-// import SoundCloudPlayer from "./SoundCloudPlayer";
+// import React, { useEffect, useRef } from "react";
+// import styled from "styled-components";
+// import NavBar from "./NavBar";
 
-const MissionStatement = () => {
-  return (
-    <>
-      {/* <section>
-        <h3 className="text-3xl text-black text-center pl-96 pr-96 py-32 parallax">
-          Our Screenprints begin with a single black and white pinhole photograph that accompanies each video.
-          We then develop these photographs at Street Level Photoworks in Glasgow.
-          These images are then professionally screenprinted using traditional techniques at The Glasgow Print Studio.
-        </h3>
-        <SoundCloudPlayer />
-      </section> */}
+// const MissionStatement = () => {
+//   const logoRef = useRef(null);
 
-      <section>
-        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+1.png" alt="Artboard 1" />
-        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+2.png" alt="Artboard 2" />
-        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+3.png" alt="Artboard 3" />
-        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+4.png" alt="Artboard 4" />
-      </section>
-      
-    </>
-  );
-};
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const logoElement = logoRef.current;
+//       const scrollPosition = window.pageYOffset;
+//       const elementPosition = logoElement.offsetTop;
+//       const distance = scrollPosition - elementPosition;
+//       logoElement.style.transform = `translateY(${distance * 0.5}px)`;
+//     };
 
-export default MissionStatement;
+//     handleScroll();
+
+//     window.addEventListener("scroll", handleScroll);
+
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
+
+//   const waterfallImage = {
+//     backgroundImage:
+//       "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg')",
+//     backgroundPosition: "center",
+//     backgroundRepeat: "no-repeat",
+//     backgroundSize: "cover",
+//     height: "1200px",
+//     width: "100%",
+//   };
+
+//   const CoorieLogo = styled.div`
+//     background-image: url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Coorie+Video+Logo+White.png');
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center;
+//     width: 700px;
+//     height: 700px;
+//     position: absolute;
+//     top: calc(50% + 20px); /* Adjust the top value to move the logo down */
+//     left: 50%;
+//     transform: translate(-50%, -70px); /* Adjust the translation value to move the logo down */
+
+//     @media (max-width: 768px) {
+//       background-size: 50%; /* Adjust the background size for smaller screens */
+//       width: 50%; /* Adjust the width for smaller screens */
+//       height: auto; /* Adjust the height for smaller screens while maintaining aspect ratio */
+//     }
+//   `;
+
+//   const Container = styled.div`
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   `;
+
+//   return (
+//     <section>
+//       <div className="relative bg-cover" style={{ ...waterfallImage }}>
+//         <NavBar className="absolute top-0 left-0 right-0" />
+//         <div className="parallax text-center mt-10" ref={logoRef}>
+//           <Container>
+//             <CoorieLogo />
+//           </Container>
+//         </div>
+//       </div>
+
+
+
+
+
+
+
+//       <div className="flex flex-col items-center justify-center h-screen">
+//       <div className="flex justify-between mb-4">
+//         <div className="flex flex-col items-center w-full">
+//           <img className="w-full" src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg" alt="Imag1" />
+//           <h1 className="text-xl">Title 1</h1>
+//         </div>
+//         <div className="flex flex-col items-center w-full">
+//           <img className="w-full" src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg" alt="Imag2" />
+//           <h1 className="text-xl">Title 2</h1>
+//         </div>
+//         <div className="flex flex-col items-center w-full">
+//           <img className="w-full" src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg" alt="Imag3" />
+//           <h1 className="text-xl">Title 3</h1>
+//         </div>
+//       </div>
+//       <div className="flex justify-between">
+//         {/* <a className="px-4 py-2 bg-gray-300 text-black" href="#">Button 1</a>
+//         <a className="px-4 py-2 bg-gray-300 text-black" href="#">Button 2</a>
+//         <a className="px-4 py-2 bg-gray-300 text-black" href="#">Button 3</a> */}
+//       </div>
+//     </div>
+
+//     </section>
+//   );
+// };
+
+// export default MissionStatement;
