@@ -17,7 +17,7 @@ const Gallery = () => {
           }));
         });
       },
-      { threshold: 0.2 } // Adjust the threshold as needed
+      { threshold: 0.2 } 
     );
 
     const gallerySections = document.querySelectorAll(".gallery-section");

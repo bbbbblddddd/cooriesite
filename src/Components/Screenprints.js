@@ -51,7 +51,7 @@ const Screenprints = () => {
       </div>
 
 
-      <section class = "pl-96 pr-96">
+      <section class>
         <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+1.png" alt="Artboard 1" />
         <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+2.png" alt="Artboard 2" />
         <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+3.png" alt="Artboard 3" />
