@@ -66,14 +66,16 @@ const Home = () => {
   const waterfallImageStyle = {
     ...waterfallImage,
     ...containerStyle,
-    height: isSmallScreen ? "800px" : "1200px",
+    height: isSmallScreen ? "450px" : "1200px",
   };
 
   const coorieLogoStyle = {
     ...coorieLogo,
-    top: isSmallScreen ? "calc(50% + 100px)" : "calc(50% + 150px)",
-    height: isSmallScreen ? "400px" : "700px",
+    top: isSmallScreen ? "calc(50% + 50px)" : "calc(50% + 150px)",
+    height: isSmallScreen ? "220px" : "700px",
+    transform: isSmallScreen ? "translate(-15%, 20%)" : "translate(-50%, 100px)",
   };
+  
 
   const pageContainerStyle = {
     maxWidth: "100%",

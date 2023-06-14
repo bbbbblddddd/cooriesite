@@ -39,7 +39,7 @@ const NavBar = () => {
               <img
                 src="/images/hamburger.png"
                 alt="Hamburger Logo"
-                className="h-12 w-12"
+                className="h-10 w-10"
               />
             )}
           </div>
