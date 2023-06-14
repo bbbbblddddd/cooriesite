@@ -39,13 +39,13 @@ const NavBar = () => {
               <img
                 src="/images/hamburger.png"
                 alt="Hamburger Logo"
-                className="h-10 w-10"
+                className="h-12 w-12"
               />
             )}
           </div>
         </div>
         {isMenuOpen && (
-          <ul className="flex flex-col justify-center items-center p-20 space-y-10 bg-white bg-opacity-90">
+          <ul className="flex flex-col justify-center items-center p-10 space-y-10 bg-white bg-opacity-90">
             <li>
               <Link className="text-2xl font-light italic" to="/">
                 Home

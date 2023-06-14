@@ -73,9 +73,10 @@ const Home = () => {
     ...coorieLogo,
     top: isSmallScreen ? "calc(50% + 50px)" : "calc(50% + 150px)",
     height: isSmallScreen ? "220px" : "700px",
-    transform: isSmallScreen ? "translate(-15%, 20%)" : "translate(-50%, 100px)",
+    transform: isSmallScreen
+      ? "translate(-15%, 20%)"
+      : "translate(-50%, 100px)",
   };
-  
 
   const pageContainerStyle = {
     maxWidth: "100%",
@@ -96,19 +97,42 @@ const Home = () => {
       </div>
 
       <div style={pageContainerStyle}>
-        <h1 className="text-5xl text-gray-700 text-center p-20" style={titleStyle}>
-          COORIE / ku:ri /
-        </h1>
-        <h1 className="text-5xl text-gray-700 text-center p-20" style={titleStyle}>
-          The Scottish art of deriving comfort, wellbeing and energy from wild landscapes.
-        </h1>
-        <h1 className="text-5xl text-gray-700 text-center p-20" style={titleStyle}>
-          The aim of The Coorie Project is to create an online platform to highlight the beauty of the natural world, and help protect it by raising awareness and funds for climate change science and curated sustainability projects.
-        </h1>
+        <div style={{ ...pageContainerStyle, paddingLeft: '50px', paddingRight: '50px' }}>
+          <h1
+            className={`text-2xl font-light  text-gray-700 text-center ${
+              isSmallScreen ? "p-4" : "p-10"
+            }`}
+            style={titleStyle}
+          >
+            COORIE / ku:ri /
+          </h1>
+          <h1
+            className={`text-6xl font-light italic text-gray-700 text-center ${
+              isSmallScreen ? "p-2" : "p-10"
+            }`}
+            style={titleStyle}
+          >
+            "The Scottish art of deriving comfort, wellbeing and energy from wild
+            landscapes."
+          </h1>
+          <h1
+            className={`text-6xl font-demi-bold text-gray-700 text-center ${
+              isSmallScreen ? "p-5" : "p-10"
+            }`}
+            style={titleStyle}
+          >
+            The aim of The Coorie Project is to create an online platform to
+            highlight the beauty of the natural world, and help protect it by
+            raising awareness and funds for climate change science and curated
+            sustainability projects.
+          </h1>
+        </div>
 
         <div className="flex flex-col items-center justify-center h-screen">
           <div
-            className={`flex ${isSmallScreen ? "flex-col" : "justify-between"} mb-4`}
+            className={`flex ${
+              isSmallScreen ? "flex-col" : "justify-between"
+            } mb-4`}
           >
             <div className="flex flex-col items-center w-full">
               <h1 className="text-xl">Title 3</h1>
@@ -157,4 +181,3 @@ const Home = () => {
 };
 
 export default Home;
-
