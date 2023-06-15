@@ -42,7 +42,7 @@ const Home = () => {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translate(-50%, 20%)",
+    transform: "translate(-50%, -50%)",
   };
 
   const containerStyle = {
@@ -90,9 +90,9 @@ const Home = () => {
       </div>
 
       <div style={pageContainerStyle}>
-        <div style={{ ...pageContainerStyle, paddingLeft: '50px', paddingRight: '50px' }}>
+        <div className="px-50">
           <h1
-            className={`text-2xl font-light  text-gray-700 text-center ${
+            className={`text-2xl font-light text-gray-700 text-center ${
               isSmallScreen ? "p-4" : "p-10"
             }`}
             style={titleStyle}
