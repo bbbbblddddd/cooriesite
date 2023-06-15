@@ -9,9 +9,8 @@ const Home = () => {
     const handleScroll = () => {
       const logoElement = logoRef.current;
       const scrollPosition = window.pageYOffset;
-      const elementPosition = logoElement.offsetTop;
-      const distance = scrollPosition - elementPosition;
-      logoElement.style.transform = `translateY(${distance * 0.5}px)`;
+      const distance = scrollPosition * 0.5;
+      logoElement.style.transform = `translateY(${distance}px)`;
     };
 
     handleScroll();
@@ -41,9 +40,9 @@ const Home = () => {
     width: "700px",
     height: "700px",
     position: "absolute",
-    top: "calc(50% + 150px)",
+    top: "50%",
     left: "50%",
-    transform: "translate(-50%, -70px)",
+    transform: "translate(-50%, 20%)",
   };
 
   const containerStyle = {
@@ -60,8 +59,6 @@ const Home = () => {
   };
 
   const isSmallScreen = useMediaQuery({ query: breakpoints.small });
-  // const isMediumScreen = useMediaQuery({ query: breakpoints.medium });
-  // const isLargeScreen = useMediaQuery({ query: breakpoints.large });
 
   const waterfallImageStyle = {
     ...waterfallImage,
@@ -71,11 +68,7 @@ const Home = () => {
 
   const coorieLogoStyle = {
     ...coorieLogo,
-    top: isSmallScreen ? "calc(50% + 50px)" : "calc(50% + 150px)",
     height: isSmallScreen ? "220px" : "700px",
-    transform: isSmallScreen
-      ? "translate(-15%, 20%)"
-      : "translate(-50%, 100px)",
   };
 
   const pageContainerStyle = {
