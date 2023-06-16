@@ -97,9 +97,15 @@ const Home = () => {
       </div>
 
       <div style={pageContainerStyle}>
-        <div style={{ ...pageContainerStyle, paddingLeft: '50px', paddingRight: '50px' }}>
+        <div
+          style={{
+            ...pageContainerStyle,
+            paddingLeft: "50px",
+            paddingRight: "50px",
+          }}
+        >
           <h1
-            className={`text-2xl font-light  text-gray-700 text-center ${
+            className={`text-2xl font-light text-center text-customGray ${
               isSmallScreen ? "p-4" : "p-10"
             }`}
             style={titleStyle}
@@ -107,16 +113,16 @@ const Home = () => {
             COORIE / ku:ri /
           </h1>
           <h1
-            className={`text-6xl font-light italic text-gray-700 text-center ${
+            className={`text-6xl font-light italic text-center text-customGray ${
               isSmallScreen ? "p-2" : "p-10"
             }`}
             style={titleStyle}
           >
-            "The Scottish art of deriving comfort, wellbeing and energy from wild
-            landscapes."
+            "The Scottish art of deriving comfort, wellbeing and energy from
+            wild landscapes."
           </h1>
           <h1
-            className={`text-6xl font-demi-bold text-gray-700 text-center ${
+            className={`text-6xl font-demi-bold text-center text-customGray ${
               isSmallScreen ? "p-5" : "p-10"
             }`}
             style={titleStyle}
@@ -126,49 +132,129 @@ const Home = () => {
             raising awareness and funds for climate change science and curated
             sustainability projects.
           </h1>
+          <h1
+            className={`text-6xl font-light text-center text-customGray ${
+              isSmallScreen ? "p-2" : "p-20"
+            }`}
+            style={titleStyle}
+          >
+            How do we do this?
+          </h1>
         </div>
 
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="">
+          <img
+            className="mx-auto"
+            style={{ maxWidth: "15%", display: "block" }}
+            src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/wave.png"
+            alt="wave line page breaker"
+          />
+        </div>
+
+        {/* <div>
+          <h3
+            className={`text-6xl font-bold italic text-gray-700 text-center ${
+              isSmallScreen ? "p-5" : "p-10"
+            }`}
+            style={titleStyle}
+          >
+            {" "}
+            What We Do...
+          </h3>
+        </div> */}
+
+        <div className="flex flex-col items-center justify-center p-10">
           <div
             className={`flex ${
               isSmallScreen ? "flex-col" : "justify-between"
             } mb-4`}
           >
             <div className="flex flex-col items-center w-full">
-              <h1 className="text-xl">Title 3</h1>
+              <h1
+                className={`text-2xl font-light text-center text-customGray ${
+                  isSmallScreen ? "p-4" : "p-10"
+                }`}
+                style={titleStyle}
+              >
+                Youtube
+              </h1>
               <div className="px-10">
                 <img
                   className="w-full"
-                  src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg"
+                  src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Giants+Graves+3+INSTA.jpg"
                   alt="explainer 1"
                 />
+                <p
+                  className={`text-2xl font-light text-center text-customGray ${
+                    isSmallScreen ? "p-4" : "p-10"
+                  }`}
+                >
+                  For every location we visit, a high quality video will be shot
+                  and made available to view on our channel. Through a monetised
+                  YouTube channel, funds can be generated from clicks and views,
+                  rather than donations.
+                </p>
               </div>
               <a className="px-4 py-2 bg-gray-300 text-black" href="#">
                 Button 1
               </a>
             </div>
             <div className="flex flex-col items-center w-full">
-              <h1 className="text-xl">Title 3</h1>
+              <h1
+                className={`text-2xl font-light text-center text-customGray ${
+                  isSmallScreen ? "p-4" : "p-10"
+                }`}
+                style={titleStyle}
+              >
+                Screenprints
+              </h1>
               <div className="px-10">
                 <img
                   className="w-full"
-                  src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg"
+                  src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lower+q.jpeg"
                   alt="explainer 2"
                 />
               </div>
+              <p
+                className={`text-2xl font-light text-center text-customGray ${
+                  isSmallScreen ? "p-4" : "p-10"
+                }`}
+              >
+                For every YouTube video we publish, there will also be a pinhole
+                camera photograph taken from the same vantage point. These will
+                then be professionally screenprinted by the artist using traditional techniques at The
+                Glasgow Print Studio.
+              </p>
               <a className="px-4 py-2 bg-gray-300 text-black" href="#">
                 Button 2
               </a>
             </div>
             <div className="flex flex-col items-center w-full">
-              <h1 className="text-xl">Title 3</h1>
+              <h1
+                className={`text-2xl font-light text-center text-customGray ${
+                  isSmallScreen ? "" : "p-10"
+                }`}
+                style={titleStyle}
+              >
+                Sponsorship
+              </h1>
               <div className="px-10">
                 <img
                   className="w-full"
-                  src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lIekaw4+-+Imgur.jpg"
+                  src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/zeroimagedetail.png"
                   alt="explainer3"
                 />
               </div>
+              <p
+                className={`text-2xl font-light text-center text-customGray ${
+                  isSmallScreen ? "p-4" : "p-10"
+                }`}
+              >
+                As we grow, companies may wish to have your relevant products featured
+                or discussed on our online platforms. Simply contact us via
+                email to discuss. Also, Anyone wishing simply support The Coorie Project need
+                only visit our Patreon account.
+              </p>
               <a className="px-4 py-2 bg-gray-300 text-black" href="#">
                 Button 3
               </a>
