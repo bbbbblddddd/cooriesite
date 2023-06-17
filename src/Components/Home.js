@@ -97,13 +97,14 @@ const Home = () => {
       </div>
 
       <div style={pageContainerStyle}>
-        <div
-          style={{
-            ...pageContainerStyle,
-            paddingLeft: "50px",
-            paddingRight: "50px",
-          }}
-        >
+      <div
+  style={{
+    ...pageContainerStyle,
+    paddingLeft: isSmallScreen ? "10px" : "50px",
+    paddingRight: isSmallScreen ? "10px" : "50px",
+  }}
+>
+
           <h1
             className={`text-2xl font-light text-center text-customGray ${
               isSmallScreen ? "p-4" : "p-10"
@@ -144,7 +145,7 @@ const Home = () => {
 
         <div className="">
         <img
-  className={`mx-auto ${isSmallScreen ? "pt-12" : ""}`}
+  className={`mx-auto ${isSmallScreen ? "pt-8" : ""}`}
   style={{ maxWidth: "15%", display: "block" }}
   src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/wave.png"
   alt="wave line page breaker"
@@ -152,7 +153,8 @@ const Home = () => {
 
         </div>
 
-        <div className="flex flex-col items-center justify-center p-10">
+        <div className={`flex flex-col items-center justify-center ${isSmallScreen ? 'p-1' : 'p-10'}`}>
+
           <div
             className={`flex ${
               isSmallScreen ? "flex-col" : "justify-between"
