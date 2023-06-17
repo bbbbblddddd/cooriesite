@@ -97,14 +97,13 @@ const Home = () => {
       </div>
 
       <div style={pageContainerStyle}>
-      <div
-  style={{
-    ...pageContainerStyle,
-    paddingLeft: isSmallScreen ? "10px" : "50px",
-    paddingRight: isSmallScreen ? "10px" : "50px",
-  }}
->
-
+        <div
+          style={{
+            ...pageContainerStyle,
+            paddingLeft: isSmallScreen ? "10px" : "50px",
+            paddingRight: isSmallScreen ? "10px" : "50px",
+          }}
+        >
           <h1
             className={`text-2xl font-light text-center text-customGray ${
               isSmallScreen ? "p-4" : "p-10"
@@ -144,123 +143,85 @@ const Home = () => {
         </div>
 
         <div className="">
-        <img
-  className={`mx-auto ${isSmallScreen ? "pt-8" : ""}`}
-  style={{ maxWidth: "15%", display: "block" }}
-  src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/wave.png"
-  alt="wave line page breaker"
-/>
-
-
-
-
-
+          <img
+            className={`mx-auto ${isSmallScreen ? "pt-6" : ""}`}
+            style={{ maxWidth: "15%", display: "block" }}
+            src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/wave.png"
+            alt="wave line page breaker"
+          />
         </div>
 
-        <div className={`flex flex-col items-center justify-center ${isSmallScreen ? 'p-1' : 'p-10'}`}>
-  <div className={`flex ${isSmallScreen ? 'flex-col' : 'justify-between'} mb-4`}>
+
+
+        <div className={`flex flex-col items-center justify-center ${isSmallScreen ? "p-1" : "p-10"}`}>
+  <div className={`flex ${isSmallScreen ? "flex-col" : "justify-between"} mb-4`}>
     <div className="flex flex-col items-center w-full">
-      <h1
-        className={`text-${isSmallScreen ? '3xl' : '5xl'} font-light text-center text-customGray ${
-          isSmallScreen ? 'p-4' : 'p-10'
-        }`}
-      >
+      <h1 className={`text-${isSmallScreen ? "3xl" : "5xl"} font-light text-center text-customGray ${isSmallScreen ? "p-4" : "p-10"}`}>
         Youtube
       </h1>
-      <div className={`px-10 ${isSmallScreen ? 'px-1' : ''}`}>
+      <div className={`px-10 ${isSmallScreen ? "px-1" : ""}`}>
         <img
           className="w-full"
           src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Giants+Graves+3+INSTA.jpg"
           alt="explainer 1"
         />
-        <p
-          className={`text-2xl font-light text-center text-customGray ${
-            isSmallScreen ? 'p-4 text-sm' : 'p-10'
-          }`}
-        >
-          For every location we visit, a high quality video will be shot and made available to view on our channel.
-          Through a monetized YouTube channel, funds can be generated from clicks and views, rather than donations.
+        <p className={`text-2xl font-light text-center text-customGray ${isSmallScreen ? "p-4 text-sm" : "p-10"}`}>
+          For every location we visit, a high quality video will be shot and made available to view on our channel. Through a monetized YouTube channel, funds can be generated from clicks and views, rather than donations.
         </p>
       </div>
-      <a
-        href="#"
-        className={`relative px-6 py-3 font-bold text-black group ${isSmallScreen ? 'p-1' : ''}`}
-      >
+      <a href="#" className={`relative px-6 py-3 font-bold text-black group ${isSmallScreen ? "p-1" : ""}`}>
         <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0"></span>
         <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
         <span className="relative">Subscribe</span>
       </a>
     </div>
+    {isSmallScreen && <div className="h-4"></div>} {/* Adds space after the button */}
     <div className="flex flex-col items-center w-full">
-      <h1
-        className={`text-${isSmallScreen ? '3xl' : '5xl'} font-light text-center text-customGray ${
-          isSmallScreen ? 'p-4' : 'p-10'
-        }`}
-      >
-        Screenprints
-      </h1>
-      <div className={`px-10 ${isSmallScreen ? 'px-1' : ''}`}>
+    <h1 className={`text-${isSmallScreen ? "3xl" : "5xl"} font-light text-center text-customGray ${isSmallScreen ? "p-4 pt-20" : "p-10"}`}>
+  Screenprints
+</h1>
+
+      <div className={`px-10 ${isSmallScreen ? "px-1" : ""}`}>
         <img
           className="w-full"
           src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lower+q.jpeg"
           alt="explainer 2"
         />
       </div>
-      <p
-        className={`text-2xl font-light text-center text-customGray ${
-          isSmallScreen ? 'p-4 text-sm' : 'p-10'
-        }`}
-      >
-        For every YouTube video we publish, there will also be a pinhole camera photograph taken from the same vantage
-        point. These will then be professionally screenprinted by the artist using traditional techniques at The Glasgow
-        Print Studio.
+      <p className={`text-2xl font-light text-center text-customGray ${isSmallScreen ? "p-4 text-sm" : "p-10"}`}>
+        For every YouTube video we publish, there will also be a pinhole camera photograph taken from the same vantage point. These will then be professionally screenprinted by the artist using traditional techniques at The Glasgow Print Studio.
       </p>
-      <a
-        href="#"
-        className={`relative px-6 py-3 font-bold text-black group ${isSmallScreen ? 'p-1' : ''}`}
-      >
+      <a href="#" className={`relative px-6 py-3 font-bold text-black group ${isSmallScreen ? "p-1" : ""}`}>
         <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0"></span>
         <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
         <span className="relative">Visit Store</span>
       </a>
     </div>
+    {isSmallScreen && <div className="h-4"></div>} {/* Adds space after the button */}
     <div className="flex flex-col items-center w-full">
-      <h1
-        className={`text-${isSmallScreen ? '3xl' : '5xl'} font-light text-center text-customGray ${
-          isSmallScreen ? 'p-4' : 'p-10'
-        }`}
-      >
+    <h1 className={`text-${isSmallScreen ? "3xl" : "5xl"} font-light text-center text-customGray ${isSmallScreen ? "p-4 pt-20" : "p-10"}`}>
         Sponsorship
       </h1>
-      <div className={`px-10 ${isSmallScreen ? 'px-1' : ''}`}>
+      <div className={`px-10 ${isSmallScreen ? "px-1" : ""}`}>
         <img
           className="w-full"
           src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/zeroimagedetail.png"
           alt="explainer3"
         />
       </div>
-      <p
-        className={`text-2xl font-light text-center text-customGray ${
-          isSmallScreen ? 'p-4 text-sm' : 'p-10'
-        }`}
-      >
-        As we grow, companies may wish to have your relevant products featured or discussed on our online platforms.
-        Simply contact us via email to discuss. Also, anyone wishing to simply support The Coorie Project need only visit
-        our Patreon account.
+      <p className={`text-2xl font-light text-center text-customGray ${isSmallScreen ? "p-4 text-sm" : "p-10"}`}>
+        As we grow, companies may wish to have your relevant products featured or discussed on our online platforms. Simply contact us via email to discuss. Also, anyone wishing to simply support The Coorie Project need only visit our Patreon account.
       </p>
-      <a
-        href="#"
-        className={`relative px-6 py-3 font-bold text-black group ${isSmallScreen ? 'p-1' : ''}`}
-      >
+      <a href="#" className={`relative px-6 py-3 font-bold text-black group ${isSmallScreen ? "p-1" : ""}`}>
         <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0"></span>
         <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
         <span className="relative">Support</span>
       </a>
     </div>
+    {isSmallScreen && <div className="h-4"></div>} {/* Adds space after the button */}
   </div>
 </div>
-
-      </div>
+</div>
     </section>
   );
 };
