@@ -168,7 +168,7 @@ const Home = () => {
               >
                 Youtube
               </h1>
-              <div className={`px-10 ${isSmallScreen ? "px-0" : ""}`}>
+              <div className={`px-10 ${isSmallScreen ? "px-1" : ""}`}>
                 <img
                   className="w-full"
                   src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Giants+Graves+3+INSTA.jpg"
@@ -199,7 +199,7 @@ const Home = () => {
               >
                 Screenprints
               </h1>
-              <div className={`px-10 ${isSmallScreen ? "px-0" : ""}`}>
+              <div className={`px-10 ${isSmallScreen ? "px-1" : ""}`}>
                 <img
                   className="w-full"
                   src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/lower+q.jpeg"
@@ -230,7 +230,7 @@ const Home = () => {
               >
                 Sponsorship
               </h1>
-              <div className={`px-10 ${isSmallScreen ? "px-0" : ""}`}>
+              <div className={`px-10 ${isSmallScreen ? "px-1" : ""}`}>
                 <img
                   className="w-full"
                   src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/zeroimagedetail.png"
