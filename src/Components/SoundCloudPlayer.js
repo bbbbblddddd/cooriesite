@@ -32,7 +32,7 @@ const SoundCloudPlayer = () => {
           left: "50%",
           transform: "translateX(-50%)",
           width: isSmallScreen ? "90%" : "55%",
-          height: isSmallScreen ?  "15%" :"10%",
+          height: isSmallScreen ?  "25%" :"10%",
           color: "#ffffff",
           display: "flex",
           flexDirection: "column",
