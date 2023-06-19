@@ -165,7 +165,7 @@ const Home = () => {
             <div className="flex flex-col items-center w-full">
               <h1
                 className={`text-${
-                  isSmallScreen ? "3xl" : "5xl"
+                  isSmallScreen ? "4xl" : "5xl"
                 } font-light text-center text-customGray ${
                   isSmallScreen ? "p-4 pt-20" : "p-10"
                 }`}
@@ -206,7 +206,7 @@ const Home = () => {
             <div className="flex flex-col items-center w-full">
               <h1
                 className={`text-${
-                  isSmallScreen ? "3xl" : "5xl"
+                  isSmallScreen ? "4xl" : "5xl"
                 } font-light text-center text-customGray ${
                   isSmallScreen ? "p-4 pt-20" : "p-10"
                 }`}
@@ -247,7 +247,7 @@ const Home = () => {
             <div className="flex flex-col items-center w-full">
               <h1
                 className={`text-${
-                  isSmallScreen ? "3xl" : "5xl"
+                  isSmallScreen ? "4xl" : "5xl"
                 } font-light text-center text-customGray ${
                   isSmallScreen ? "p-4 pt-20" : "p-10"
                 }`}
