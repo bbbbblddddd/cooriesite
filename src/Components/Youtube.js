@@ -54,7 +54,7 @@ const Youtube = () => {
 
   const fallochImageContainerStyle = {
     ...fallochImageStyle,
-    marginTop: isSmallScreen ? "-300px" : "0",
+    marginTop: isSmallScreen ? "-350px" : "0",
   };
 
   return (
