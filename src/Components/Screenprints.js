@@ -25,11 +25,11 @@ const Screenprints = () => {
   const printImage = {
     backgroundImage:
       "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/the+Cobbler+copy.jpg')",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      height: "1200px",
-      width: "100%",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    height: "1200px",
+    width: "100%",
   };
 
   const containerStyle = {
@@ -51,27 +51,12 @@ const Screenprints = () => {
     ...printImage,
     ...containerStyle,
     height: isSmallScreen ? "450px" : "1200px",
-
   };
-
-  const textStyle = {
-    ...printImage,
-    ...containerStyle,
-    position: "relative", // Add relative position
-    top: isSmallScreen ? "0" : "25%", // Adjust the value here
-  };
-  
-  
-  
-
-
-  
-  
 
   return (
     <div>
       <section>
-      <div
+        <div
           className={`relative h-screen bg-cover sm:bg-auto ${
             isSmallScreen ? "transform-none" : "transform-y-1/2"
           }`}
@@ -87,22 +72,23 @@ const Screenprints = () => {
             Screenprints. Professionally made by hand in Glasgow, Scotland.
           </h1>
           <h1
- className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
-  isSmallScreen ? "text-sm px-4" : ""
-}`}
-
-  style={{
-    textShadow: "0 0 1px black",
-    position: "absolute",
-    top: "50%",
-    transform: "translateY(-35%)",
-  }}
->
-  Our Screenprints begin with a single black and white pinhole photograph that accompanies each video. We then develop these photographs at Street Level Photoworks in Glasgow. These images are then professionally screenprinted using traditional techniques at The Glasgow Print Studio.
-</h1>
-
+            className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
+              isSmallScreen ? "text-sm px-4" : ""
+            }`}
+            style={{
+              textShadow: "0 0 1px black",
+              position: "absolute",
+              top: "50%",
+              transform: "translateY(-35%)",
+            }}
+          >
+            Our Screenprints begin with a single black and white pinhole
+            photograph that accompanies each video. We then develop these
+            photographs at Street Level Photoworks in Glasgow. These images are
+            then professionally screenprinted using traditional techniques at
+            The Glasgow Print Studio.
+          </h1>
         </div>
-
         <section>
           <img
             src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Artboard+1.png"
@@ -129,8 +115,6 @@ const Screenprints = () => {
         <div className="flex flex-col justify-center items-center">
           <Gallery />
         </div>
-
-
       </section>
 
       <div className="flex flex-col justify-center items-center py-10 sm:py-20">
@@ -140,9 +124,10 @@ const Screenprints = () => {
           rel="noopener noreferrer"
           className="text-5xl font-light italic relative inline-block px-4 py-2 font-medium group"
         >
-        <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
-                <span className="relative">Visit Store</span>
+         <span className={`absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0 ${isSmallScreen ? 'scale-90' : ''}`}></span>
+<span className={`absolute inset-0 w-full h-full border-4 border-black ${isSmallScreen ? 'scale-y-90' : ''}`}></span>
+<span className={`relative ${isSmallScreen ? 'text-sm scale-90' : ''}`}>Visit Store</span>
+
         </a>
       </div>
     </div>

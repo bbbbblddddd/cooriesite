@@ -191,7 +191,7 @@ const Home = () => {
                 rather than donations.
               </p>
               <Link
-                to="/screenprints"
+                to="/youtube"
                 className={`relative px-6 py-3 font-bold text-black group ${
                   isSmallScreen ? "p-1" : ""
                 }`}
