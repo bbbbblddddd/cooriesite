@@ -167,30 +167,31 @@ const Home = () => {
                 className={`text-${
                   isSmallScreen ? "3xl" : "5xl"
                 } font-light text-center text-customGray ${
-                  isSmallScreen ? "p-4" : "p-10"
+                  isSmallScreen ? "p-4 pt-20" : "p-10"
                 }`}
               >
                 Youtube
               </h1>
+
               <div className={`px-10 ${isSmallScreen ? "px-1" : ""}`}>
                 <img
                   className="w-full"
                   src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Giants+Graves+3+INSTA.jpg"
-                  alt="explainer 1"
+                  alt="explainer 2"
                 />
-                <p
-                  className={`text-2xl font-light text-center text-customGray ${
-                    isSmallScreen ? "p-4 text-sm" : "p-10"
-                  }`}
-                >
-                  For every location we visit, a high quality video will be shot
-                  and made available to view on our channel. Through a monetized
-                  YouTube channel, funds can be generated from clicks and views,
-                  rather than donations.
-                </p>
               </div>
+              <p
+                className={`text-2xl font-light text-center text-customGray ${
+                  isSmallScreen ? "p-4 text-sm" : "p-10"
+                }`}
+              >
+                For every location we visit, a high quality video will be shot
+                and made available to view on our channel. Through a monetized
+                YouTube channel, funds can be generated from clicks and views,
+                rather than donations.
+              </p>
               <Link
-                to="/youtube"
+                to="/screenprints"
                 className={`relative px-6 py-3 font-bold text-black group ${
                   isSmallScreen ? "p-1" : ""
                 }`}

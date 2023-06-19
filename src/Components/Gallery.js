@@ -54,7 +54,7 @@ const Gallery = () => {
         <h1 class="text-3xl text-gray-700 text-center"> The Giant's Causeway</h1>
       </section>
 
-      <br />
+ 
 
       <section
         className="gallery-section"
