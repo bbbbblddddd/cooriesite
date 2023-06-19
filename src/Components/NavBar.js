@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const isSmallScreen = useMediaQuery({ maxWidth: 768 });
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);

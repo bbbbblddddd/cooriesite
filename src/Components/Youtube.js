@@ -89,11 +89,7 @@ const Youtube = () => {
                 transform: "translateY(-35%)",
               }}
             >
-              Our Screenprints begin with a single black and white pinhole
-              photograph that accompanies each video. We then develop these
-              photographs at Street Level Photoworks in Glasgow. These images
-              are then professionally screenprinted using traditional techniques
-              at The Glasgow Print Studio.
+              Funds can be generated from clicks and views, rather than donations.
             </h1>
           </div>
         </section>
