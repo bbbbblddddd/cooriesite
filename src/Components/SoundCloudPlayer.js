@@ -1,6 +1,15 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 const SoundCloudPlayer = () => {
+  const breakpoints = {
+    small: "(max-width: 639px)",
+    medium: "(min-width: 640px) and (max-width: 1023px)",
+    large: "(min-width: 1024px)",
+  };
+
+  const isSmallScreen = useMediaQuery({ query: breakpoints.small });
+
   return (
     <div
       style={{
@@ -11,7 +20,7 @@ const SoundCloudPlayer = () => {
         backgroundPosition: "center",
         width: "100%",
         height: "0",
-        paddingTop: "60%",
+        paddingTop: isSmallScreen ? "100%" : "60%",
         position: "relative",
         overflow: "hidden",
       }}
@@ -22,8 +31,8 @@ const SoundCloudPlayer = () => {
           bottom: "3%",
           left: "50%",
           transform: "translateX(-50%)",
-          width: "55%",
-          height: "10%",
+          width: isSmallScreen ? "90%" : "55%",
+          height: isSmallScreen ?  "15%" :"10%",
           color: "#ffffff",
           display: "flex",
           flexDirection: "column",
