@@ -10,6 +10,11 @@ const NavBar = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+    setMenuOpen(false);
+  };
+
   return (
     <nav>
       <div className="fixed top-0 left-0 z-50 w-full">
@@ -47,22 +52,38 @@ const NavBar = () => {
         {isMenuOpen && (
           <ul className="flex flex-col justify-center items-center p-10 space-y-10 bg-white bg-opacity-90">
             <li>
-              <Link className="text-2xl font-light italic" to="/">
+              <Link
+                className="text-2xl font-light italic"
+                to="/"
+                onClick={handleLinkClick}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link className="text-2xl font-light italic" to="/screenprints">
+              <Link
+                className="text-2xl font-light italic"
+                to="/screenprints"
+                onClick={handleLinkClick}
+              >
                 Screenprints
               </Link>
             </li>
             <li>
-              <Link className="text-2xl font-light italic" to="/youtube">
+              <Link
+                className="text-2xl font-light italic"
+                to="/youtube"
+                onClick={handleLinkClick}
+              >
                 Youtube
               </Link>
             </li>
             <li>
-              <Link className="text-2xl font-light italic" to="/radio">
+              <Link
+                className="text-2xl font-light italic"
+                to="/radio"
+                onClick={handleLinkClick}
+              >
                 Radio Show
               </Link>
             </li>
@@ -72,6 +93,7 @@ const NavBar = () => {
                   href="https://www.youtube.com/channel/UCULPVxk5Zjk2zje5drAou_Q?app=desktop&disable_polymer=true"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleLinkClick}
                 >
                   <img
                     src="/images/youtube.png"
@@ -85,6 +107,7 @@ const NavBar = () => {
                   href="https://www.instagram.com/coorieproject/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleLinkClick}
                 >
                   <img
                     src="/images/instagram.png"
@@ -94,7 +117,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:coorieproject@gmail.com">
+                <a href="mailto:coorieproject@gmail.com" onClick={handleLinkClick}>
                   <img
                     src="/images/email.png"
                     alt="Email Logo"
