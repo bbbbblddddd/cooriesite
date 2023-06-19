@@ -103,7 +103,7 @@ const Youtube = () => {
             className="mx-auto"
             style={{
               position: "absolute",
-              top: isSmallScreen ? "-220px" : "0",
+              top: isSmallScreen ? "-240px" : "0",
               left: 0,
               width: isSmallScreen ? "100%" : "100%",
               height: "100%",

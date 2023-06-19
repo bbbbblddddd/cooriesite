@@ -1,17 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import SoundCloudPlayer from "./SoundCloudPlayer";
 import NavBar from "./NavBar";
+import { useMediaQuery } from "react-responsive";
 
 const Radio = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
   useEffect(() => {
     const handleScroll = () => {
-      const parallaxElements = document.querySelectorAll(".parallax");
-      for (let element of parallaxElements) {
-        const scrollPosition = window.pageYOffset;
-        const elementPosition = element.offsetTop;
-        const distance = scrollPosition - elementPosition;
-        element.style.transform = `translateY(${distance * 0.5}px)`;
-      }
+      setScrollPosition(window.pageYOffset);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -26,28 +23,59 @@ const Radio = () => {
       "url('https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/clyde2.jpg')",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "1400px",
+    backgroundSize: "cover",
+    height: "1200px",
+    width: "100%",
   };
 
   const containerStyle = {
     overflow: "hidden",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   };
 
-  
+  const breakpoints = {
+    small: "(max-width: 639px)",
+    medium: "(min-width: 640px) and (max-width: 1023px)",
+    large: "(min-width: 1024px)",
+  };
+
+  const isSmallScreen = useMediaQuery({ query: breakpoints.small });
+
+  const clydeImageStyle = {
+    ...clydeImage,
+    ...containerStyle,
+    height: isSmallScreen ? "550px" : "1200px",
+    marginTop: isSmallScreen ? "-200px" : "0",
+  };
+
+  const translateValue = isSmallScreen ? scrollPosition * 0.5 : 0.2 * scrollPosition;
+
+  const h3Style = {
+    textShadow: "0 0 1px black",
+    transform: `translateY(${translateValue}px)`,
+    marginTop: isSmallScreen ? "80px" : "0",
+  };
 
   return (
     <div>
       <section>
         <div
           className="relative h-screen bg-cover"
-          style={{ ...clydeImage, ...containerStyle }}
+          style={{ ...clydeImageStyle, ...containerStyle }}
         >
           <NavBar className="absolute top-0 left-0 right-0" />
-          <h3 className="text-4xl text-white text-center pl-96 pr-96 py-80 parallax" style={{ textShadow: "0 0 1px black" }}>
+          <h3
+            className={`text-5xl font-semi-bold text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
+              isSmallScreen ? "text-sm px-6" : ""
+            }`}
+            style={h3Style}
+          >
             In 2021, I created a radio show for Clyde Built Radio with the
             purpose of promoting The Coorie Project aims.
-            <br/>
-            <br/>
+            <br />
+            <br />
             I decided to create a Scottish Nature Companion for anyone
             experiencing the outdoors here in Scotland. The show features some
             sage advice from legendary Scottish traveller Tom Weir, along with
@@ -56,15 +84,15 @@ const Radio = () => {
           </h3>
         </div>
         <div>
-        <img src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Listen.png" alt="listen_image" />
-      </div>
+          <img
+            src="https://coorieprojectimagesbbbbblddddd.s3.eu-west-2.amazonaws.com/Listen.png"
+            alt="listen_image"
+          />
+        </div>
       </section>
-
-  
       <SoundCloudPlayer />
-      <br/>
+      <br />
     </div>
-    
   );
 };
 
