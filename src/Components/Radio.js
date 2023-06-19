@@ -47,7 +47,7 @@ const Radio = () => {
     ...clydeImage,
     ...containerStyle,
     height: isSmallScreen ? "550px" : "1200px",
-    marginTop: isSmallScreen ? "-200px" : "0",
+    marginTop: isSmallScreen ? "-250px" : "0",
   };
 
   const translateValue = isSmallScreen ? scrollPosition * 0.5 : 0.2 * scrollPosition;
