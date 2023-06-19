@@ -87,9 +87,10 @@ const Screenprints = () => {
             Screenprints. Professionally made by hand in Glasgow, Scotland.
           </h1>
           <h1
-  className={`text-4xl font-semibold text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
-    isSmallScreen ? "text-sm px-4" : ""
-  }`}
+ className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
+  isSmallScreen ? "text-sm px-4" : ""
+}`}
+
   style={{
     textShadow: "0 0 1px black",
     position: "absolute",
@@ -139,11 +140,9 @@ const Screenprints = () => {
           rel="noopener noreferrer"
           className="text-5xl font-light italic relative inline-block px-4 py-2 font-medium group"
         >
-          <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-          <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-          <span className="relative text-black group-hover:text-white">
-            Visit Store
-          </span>
+        <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
+                <span className="relative">Visit Store</span>
         </a>
       </div>
     </div>
