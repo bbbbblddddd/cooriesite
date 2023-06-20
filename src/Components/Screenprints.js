@@ -69,7 +69,7 @@ const Screenprints = () => {
               isSmallScreen
                 ? "text-lg px-4"
                 : isMediumScreen
-                ? "text- md:pl-3 md:pr-3"
+                ? "md:pl-10 md:pr-10"
                 : ""
             }`}
             style={{ textShadow: "0 0 1px black" }}
@@ -77,11 +77,11 @@ const Screenprints = () => {
             Screenprints. Professionally made by hand in Glasgow, Scotland.
           </h2>
           <h2
-            className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 px-0 parallax ${
+            className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
               isSmallScreen
-                ? "text-sm px-4"
+                ? "text-sm px-"
                 : isMediumScreen
-                ? "text- md:pl-3 md:pr-3 sm:py-36 "
+                ? "text-lg md:pl-10 md:pr-10"
                 : ""
             }`}
             style={{
