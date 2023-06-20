@@ -46,6 +46,7 @@ const Screenprints = () => {
   };
 
   const isSmallScreen = useMediaQuery({ query: breakpoints.small });
+  const isMediumScreen = useMediaQuery({ query: breakpoints.medium });
 
   const printImageStyle = {
     ...printImage,
@@ -63,17 +64,25 @@ const Screenprints = () => {
           style={{ ...printImageStyle, ...containerStyle }}
         >
           <NavBar className="absolute top-0 left-0 right-0" />
-          <h1
-            className={`text-6xl font-semibold text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-32 sm:py-80 parallax ${
-              isSmallScreen ? "text-lg px-4" : ""
+          <h2
+            className={`text-5xl font-semibold text-white text-center sm:pl-6 sm:pr-1 md:pl-96 md:pr-96 py-32 sm:py-80 parallax ${
+              isSmallScreen
+                ? "text-lg px-4"
+                : isMediumScreen
+                ? "text- md:pl-3 md:pr-3"
+                : ""
             }`}
             style={{ textShadow: "0 0 1px black" }}
           >
             Screenprints. Professionally made by hand in Glasgow, Scotland.
-          </h1>
-          <h1
-            className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
-              isSmallScreen ? "text-sm px-4" : ""
+          </h2>
+          <h2
+            className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 px-0 parallax ${
+              isSmallScreen
+                ? "text-sm px-4"
+                : isMediumScreen
+                ? "text- md:pl-3 md:pr-3 sm:py-36 "
+                : ""
             }`}
             style={{
               textShadow: "0 0 1px black",
@@ -87,7 +96,7 @@ const Screenprints = () => {
             photographs at Street Level Photoworks in Glasgow. These images are
             then professionally screenprinted using traditional techniques at
             The Glasgow Print Studio.
-          </h1>
+          </h2>
         </div>
         <section>
           <img
@@ -124,10 +133,21 @@ const Screenprints = () => {
           rel="noopener noreferrer"
           className="text-5xl font-light italic relative inline-block px-4 py-2 font-medium group"
         >
-         <span className={`absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0 ${isSmallScreen ? 'scale-90' : ''}`}></span>
-<span className={`absolute inset-0 w-full h-full border-4 border-black ${isSmallScreen ? 'scale-y-90' : ''}`}></span>
-<span className={`relative ${isSmallScreen ? 'text-sm scale-90' : ''}`}>Visit Store</span>
-
+          <span
+            className={`absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-white group-hover:translate-x-0 group-hover:translate-y-0 ${
+              isSmallScreen ? "scale-90" : ""
+            }`}
+          ></span>
+          <span
+            className={`absolute inset-0 w-full h-full border-4 border-black ${
+              isSmallScreen ? "scale-y-90" : ""
+            }`}
+          ></span>
+          <span
+            className={`relative ${isSmallScreen ? "text-sm scale-90" : ""}`}
+          >
+            Visit Store
+          </span>
         </a>
       </div>
     </div>

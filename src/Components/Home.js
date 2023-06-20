@@ -61,7 +61,7 @@ const Home = () => {
   };
 
   const isSmallScreen = useMediaQuery({ query: breakpoints.small });
-  // const isMediumScreen = useMediaQuery({ query: breakpoints.medium });
+  const isMediumScreen = useMediaQuery({ query: breakpoints.medium });
   // const isLargeScreen = useMediaQuery({ query: breakpoints.large });
 
   const waterfallImageStyle = {
@@ -86,6 +86,7 @@ const Home = () => {
 
   const titleStyle = {
     fontSize: isSmallScreen ? "1rem" : "3rem",
+    fontSize: isMediumScreen ? "2rem" : "3rem"
   };
 
   return (
@@ -103,6 +104,7 @@ const Home = () => {
             ...pageContainerStyle,
             paddingLeft: isSmallScreen ? "10px" : "50px",
             paddingRight: isSmallScreen ? "10px" : "50px",
+            
           }}
         >
           <h1
