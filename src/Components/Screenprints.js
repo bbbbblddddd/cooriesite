@@ -67,9 +67,9 @@ const Screenprints = () => {
           <h2
             className={`text-6xl font-semibold text-white text-center py-32 sm:py-80 px-20 parallax ${
               isSmallScreen
-                ? "text-lg"
+                ? "text-lg px-4"
                 : isMediumScreen
-                ? "md:pl-1 md:pr-1"
+                ? "text-1xl px-12 sm:py-52"
                 : ""
             }`}
             style={{ textShadow: "0 0 1px black" }}
@@ -79,9 +79,9 @@ const Screenprints = () => {
           <h2
             className={`text-4xl font-light text-white text-center py-24 sm:py-72 parallax px-20 ${
               isSmallScreen
-                ? "text-sm px-"
+                ? "text-sm px-4"
                 : isMediumScreen
-                ? "text-lg md:pl-1 md:pr-1"
+                ? "text-1xl px-12 sm:py-52"
                 : ""
             }`}
             style={{

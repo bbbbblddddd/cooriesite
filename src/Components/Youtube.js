@@ -45,6 +45,8 @@ const Youtube = () => {
   };
 
   const isSmallScreen = useMediaQuery({ query: breakpoints.small });
+  const isMediumScreen = useMediaQuery({ query: breakpoints.medium });
+
 
   const fallochImageStyle = {
     ...fallochImage,
@@ -54,7 +56,7 @@ const Youtube = () => {
 
   const fallochImageContainerStyle = {
     ...fallochImageStyle,
-    marginTop: isSmallScreen ? "-350px" : "0",
+    marginTop: isSmallScreen ? "-350px" : isMediumScreen ? "-200px" : "0",
   };
 
   return (
@@ -68,8 +70,12 @@ const Youtube = () => {
             <NavBar className="absolute top-0 left-0 right-0" />
 
             <h1
-              className={`text-5xl font-semi-bold text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
-                isSmallScreen ? "text-sm px-4" : ""
+              className={`text-4xl font-semibold text-white text-center  sm:py-80 px-20 parallax ${
+                isSmallScreen
+                ? "text-lg px-4"
+                : isMediumScreen
+                ? " px-20 sm:py-70"
+                : ""
               }`}
               style={{ textShadow: "0 0 1px black" }}
             >
@@ -79,8 +85,12 @@ const Youtube = () => {
               sustainability projects/exhibitions.
             </h1>
             <h1
-              className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
-                isSmallScreen ? "text-sm px-4" : ""
+              className={`text-3xl font-semibold text-white text-center  sm:py-70 px-20 parallax ${
+                isSmallScreen
+                ? "text-lg px-4"
+                : isMediumScreen
+                ? "text-1xl px-5 sm:py-80"
+                : ""
               }`}
               style={{
                 textShadow: "0 0 1px black",
