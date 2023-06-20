@@ -67,7 +67,7 @@ const Radio = () => {
         >
           <NavBar className="absolute top-0 left-0 right-0" />
           <h3
-            className={`text-5xl font-semi-bold text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
+            className={`text-5xl font-semi-bold text-white text-center sm:pl-6 sm:pr-6  py-24 sm:py-72 parallax ${
               isSmallScreen ? "text-sm px-6" : ""
             }`}
             style={h3Style}
