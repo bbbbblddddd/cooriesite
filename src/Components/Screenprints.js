@@ -65,7 +65,7 @@ const Screenprints = () => {
         >
           <NavBar className="absolute top-0 left-0 right-0" />
           <h2
-            className={`text-5xl font-semibold text-white text-center sm:pl-6 sm:pr-1 md:pl-96 md:pr-96 py-32 sm:py-80 parallax ${
+            className={`text-6xl font-semibold text-white text-center py-32 sm:py-80 px-20 parallax ${
               isSmallScreen
                 ? "text-lg"
                 : isMediumScreen
@@ -77,7 +77,7 @@ const Screenprints = () => {
             Screenprints. Professionally made by hand in Glasgow, Scotland.
           </h2>
           <h2
-            className={`text-4xl font-light text-white text-center sm:pl-6 sm:pr-6 md:pl-96 md:pr-96 py-24 sm:py-72 parallax ${
+            className={`text-4xl font-light text-white text-center py-24 sm:py-72 parallax px-20 ${
               isSmallScreen
                 ? "text-sm px-"
                 : isMediumScreen
