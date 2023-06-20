@@ -42,6 +42,8 @@ const Radio = () => {
   };
 
   const isSmallScreen = useMediaQuery({ query: breakpoints.small });
+  const isMediumScreen = useMediaQuery({ query: breakpoints.medium });
+
 
   const clydeImageStyle = {
     ...clydeImage,
@@ -67,9 +69,10 @@ const Radio = () => {
         >
           <NavBar className="absolute top-0 left-0 right-0" />
           <h3
-            className={`text-5xl font-semi-bold text-white text-center sm:pl-6 sm:pr-6  py-24 sm:py-72 parallax ${
-              isSmallScreen ? "text-sm px-6" : ""
+            className={`text-4xl font-semi-bold text-white text-center sm:pl-6 sm:pr-6 py-24 sm:py-72 parallax ${
+              isSmallScreen ? "text-sm px-6" : isMediumScreen ? "text-2xl" : ""
             }`}
+            
             style={h3Style}
           >
             In 2021, I created a radio show for Clyde Built Radio with the
