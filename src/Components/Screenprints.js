@@ -126,7 +126,7 @@ const Screenprints = () => {
         </div>
       </section>
 
-      <div className="flex flex-col justify-center items-center py-10 sm:py-20">
+      {/* <div className="flex flex-col justify-center items-center py-10 sm:py-20">
         <a
           href="https://dreichdesign.bigcartel.com/"
           target="_blank"
@@ -149,7 +149,7 @@ const Screenprints = () => {
             Visit Store
           </span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
